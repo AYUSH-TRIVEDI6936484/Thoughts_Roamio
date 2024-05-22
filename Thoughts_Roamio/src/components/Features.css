@@ -1,0 +1,171 @@
+.FeaturesContainer{
+    padding: 50px 20px;
+  background-color: #18171E;
+  color: #F4DDA9;
+  @media (max-width: 768px) {
+    height: 1500px;
+  }
+}
+
+.FeatureTitle{
+    font-size: 9em;
+    margin-bottom: 50px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    @media (max-width: 768px) {
+      font-size: 3em;
+    }
+}
+
+.FeaturesWrapper{
+    display: flex;
+  margin-left: 140px;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.LeftMenu{
+    flex: 1;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.MenuItem{
+    font-size: 1.2em;
+  margin: 20px 0;
+  display: flex;
+  color:white;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:hover .arrow {
+    color: #fff;
+  }
+}
+
+.MenuItemActive{
+    color: black;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.RightContent{
+    flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.WhiteContainer{
+    background-color: white;
+  padding: 20px;
+  height: 300px;
+  margin-right: 150px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+    height:800px
+  }
+}
+
+.ImageContainer{
+    width: 50%;
+  height: auto;
+  margin-right: 20px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.FeatureImage{
+    width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.FeatureDescription{
+    font-size: 1.5em;
+  line-height: 1.5;
+  color: #333;
+  flex: 1;
+  margin-right: 80px;
+}
+
+.GetStartedButton{
+    display: inline-flex;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  z-index: 2;
+
+  &:hover {
+    background-color: #444;
+  }
+
+  @media (max-width: 768px) {
+    margin-right: 10px;
+  }
+}
+
+.ButtonContainer{
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-top: 20px;
+  margin-right: 50px;
+  position: relative;
+}
+
+.ArrowCircle{
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.ArrowIcon{
+  font-size: 1.5em;
+  color: #333;
+  display: inline-block;
+  margin-left: 10px;
+  transform: rotate(0deg);
+  ::before {
+    content: '\\2192';
+  }
+}
